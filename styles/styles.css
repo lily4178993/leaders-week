@@ -76,7 +76,6 @@ button {
 }
 
 .btn {
-  width: 95%;
   font-size: 1.1rem;
   justify-content: center;
   margin: 1.5em auto;
@@ -183,7 +182,9 @@ button {
 
   .program-icon {
     align-items: center;
-    gap: 0.5em;
+    justify-content: space-between;
+    justify-self: center;
+    margin-right: 1em;
   }
 
   .program-icon h3 {
@@ -197,6 +198,8 @@ button {
   }
 
   .btn-join-event {
+    width: 81%;
+    letter-spacing: -1px;
     color: var(--color-white);
     background: var(--color-darkOrange);
   }
@@ -263,6 +266,9 @@ button {
   }
 
   .btn-more {
+    width: 97%;
+    align-items: center;
+    gap: 1em;
     text-transform: uppercase;
     color: #000;
     background: var(--color-white);
@@ -275,18 +281,42 @@ button {
     border-right: 2px solid var(--color-darkOrange);
     transform: rotate(45deg);
     padding: 0.2em;
-    margin-left: 1em;
+    margin-top: -0.5em;
+  }
+
+  /* ==== PARTNER SECTION ==== */
+  .partner-section {
+    color: #d3d3d3ba;
+    background: var(--color-dark);
+    padding-top: 1em;
+    display: none;
+  }
+
+  .partner-box {
+    max-width: max-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 1.5em;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 1.45rem;
   }
 }
 
 /* ==== Mobile M - 375px ==== */
-@media screen and (width >= 357px) {
+@media screen and (width >= 375px) {
   .section-container {
     padding: 2em 1em;
   }
 
+  .section-title {
+    font-size: 1.5rem;
+  }
+
   .hero-section {
-    height: 54vh;
+    height: 56vh;
   }
 
   /* ==== HERO SECTION ==== */
@@ -305,11 +335,11 @@ button {
   }
 
   .card-box p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .card-box h3 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   /* ==== FEATURED SPEAKERS SECTION ==== */
@@ -320,5 +350,74 @@ button {
 
   .speaker-img {
     width: 110px;
+  }
+
+  /* ==== PARTNER SECTION ==== */
+  .partner-box {
+    font-size: 1.4rem;
+    padding: 2em 0;
+  }
+
+  .speaker-infos .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==== Tablet > 424px ==== */
+@media screen and (width > 424px) {
+  .hero-section .description {
+    font-size: 1.5rem;
+  }
+
+  .program-box {
+    grid-template-columns: 34% auto;
+  }
+
+  .program-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .program-box p {
+    font-size: 1.19rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .btn-join-event {
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .speaker-img {
+    width: 150px;
+  }
+
+  .speaker-box {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .speaker-infos h4 {
+    font-size: 1.5rem;
+  }
+
+  .speaker-infos .title {
+    font-size: 1.1rem;
+  }
+
+  .speaker-infos .separator {
+    width: 30px;
+  }
+
+  .speaker-infos .description {
+    font-size: 1.2rem;
+  }
+
+  .partner-box {
+    font-size: 1.7rem;
   }
 }
