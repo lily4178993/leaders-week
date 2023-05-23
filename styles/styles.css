@@ -167,9 +167,11 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     background: url(../images/background-1.png) top/cover no-repeat;
-
-    /* background: url(./) top/cover no-repeat, var(--color-white); */
     padding-top: 4em;
+  }
+
+  .about-page.hero-section {
+    text-align: center;
   }
 
   .hero-section .title-box {
@@ -201,6 +203,15 @@ button {
   .hero-event {
     font-size: 1.1rem;
     line-height: 2em;
+  }
+
+  .about-page .hero-event {
+    line-height: normal;
+  }
+
+  .about-page .mail {
+    text-decoration: underline;
+    font-weight: 600;
   }
 
   /* ==== MAIN PROGRAM SECTION ==== */
@@ -361,6 +372,10 @@ button {
     display: none;
   }
 
+  .about-page.partner-section {
+    display: block;
+  }
+
   .partner-box {
     max-width: max-content;
     flex-direction: row;
@@ -371,6 +386,70 @@ button {
     flex-wrap: wrap;
     font-weight: 600;
     font-size: 1.45rem;
+  }
+
+  /* ==== ABOUT LEADER WEEK SECTION ==== */
+  .about-leader-week {
+    text-align: center;
+    padding: 1em 0.5em;
+    border-top: 1px solid var(--color-grey);
+  }
+
+  .about-leader-week img {
+    max-width: 250px;
+    border: 1px solid var(--color-grey);
+    margin: 1em 0;
+  }
+
+  /* ==== LATEST EVENTS SECTION ==== */
+  .latest-events {
+    text-align: center;
+    padding: 1em 0.5em;
+    border-top: 1px solid var(--color-grey);
+  }
+
+  .events-box {
+    width: 80%;
+    max-width: 350px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    padding: 0 0.5em;
+    color: var(--color-white);
+    position: relative;
+  }
+
+  .events-box::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-darkOrange);
+    opacity: 0.6;
+  }
+
+  .events-box span {
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 1;
+  }
+
+  .events-box p {
+    font-size: 1.1rem;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+  .events-box.box-1 {
+    background: url(../images/event-1.jpg) center/cover no-repeat;
+  }
+
+  .events-box.box-2 {
+    background: url(../images/event-2.jpg) center/cover no-repeat;
   }
 
   /* ==== FOOTER ==== */
