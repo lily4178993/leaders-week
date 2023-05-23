@@ -96,6 +96,8 @@ button {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    background: var(--color-whitesmoke);
+    padding: 2px;
     z-index: 100;
   }
 
