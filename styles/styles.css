@@ -51,6 +51,10 @@ button {
   outline: var(--color-grey);
 }
 
+.logo {
+  max-width: 100px;
+}
+
 /* ======= CUSTOM STYLES RULES ======= */
 .d-flex {
   display: flex;
@@ -302,6 +306,13 @@ button {
     flex-wrap: wrap;
     font-weight: 600;
     font-size: 1.45rem;
+  }
+
+  /* ==== FOOTER ==== */
+  footer {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
   }
 }
 
