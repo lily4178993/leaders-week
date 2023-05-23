@@ -52,7 +52,7 @@ button {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 /* ======= CUSTOM STYLES RULES ======= */
@@ -121,6 +121,10 @@ button {
     width: 100%;
     height: 100vh;
     border-bottom-left-radius: 0%;
+  }
+
+  .menu-box  .hidden-item {
+    display: none;
   }
 
   .menu-box ul li {
@@ -475,10 +479,6 @@ button {
   }
 
   /* ==== HERO SECTION ==== */
-  .hero-section .title {
-    font-size: 2rem;
-  }
-
   .hero-event {
     font-size: 1.2rem;
   }
@@ -520,6 +520,14 @@ button {
 
 /* ==== Tablet > 424px ==== */
 @media screen and (width > 424px) {
+  .hero-section .title {
+    font-size: 2rem;
+  }
+
+  .hero-section .subtitle {
+    font-size: 2.5rem;
+  }
+
   .hero-section .description {
     font-size: 1.5rem;
   }
@@ -574,5 +582,90 @@ button {
 
   .partner-box {
     font-size: 1.7rem;
+  }
+}
+
+/* ==== Tablet > 424px ==== */
+@media screen and (width > 450px) {
+  .hero-section {
+    height: auto;
+  }
+}
+
+/* ==== Laptop > 768px ==== */
+@media screen and (width > 768px) {
+  /* ==== MENU ==== */
+  #menu-icon {
+    display: none;
+  }
+
+  .menu-box {
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.3em 2em 0.3em 0;
+    border-radius: 0;
+    background: var(--color-white);
+    box-shadow: 0 1px 15px -6px var(--color-dark);
+    z-index: 1000;
+  }
+
+  .menu-box  .hidden-item {
+    display: block;
+  }
+
+  .menu-box  .red-bordered {
+    padding: 0.3em;
+    color: var(--color-darkOrange);
+    border: 4px solid var(--color-darkOrange);
+  }
+
+  .menu-box ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .menu-box ul li {
+    opacity: 1;
+    transform: translateY(0);
+    margin: 0;
+  }
+
+  .menu-box ul li a {
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: none;
+  }
+
+  .menu-box ul li a.active {
+    color: var(--color-darkOrange);
+  }
+
+  .section-container {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  /* ==== HERO SECTION ==== */
+  .hero-section .title{
+    font-size: 3rem;
+  }
+
+  .hero-section .subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .about-page.hero-section .subtitle {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: url(../images/background-3.png) center/cover, var(--color-darkOrange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ec5342b4;
   }
 }
