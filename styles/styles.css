@@ -112,7 +112,7 @@ button {
     justify-content: center;
     align-items: flex-start;
     padding-top: 5em;
-    background: rgba(0, 0, 0, 0.809);
+    background: var(--color-white);
     overflow: hidden;
     border-bottom-left-radius: 100%;
     transition: width 1s, height 1s, border-radius 1s;
@@ -148,14 +148,19 @@ button {
     text-transform: capitalize;
     font-size: 40px;
     font-weight: 600;
-    color: rgb(237, 236, 236);
+    color: var(--color-dark);
     text-shadow: 0 0 0 red;
     transition: text-shadow 1s, transform 0.5s;
   }
 
-  .menu-box ul li a:hover {
+  .menu-box ul li a:hover,
+  .menu-box ul li a:focus {
     text-shadow: 0 2px 3px red;
     transform: translateY(-6px);
+  }
+
+  .menu-box ul li a.active {
+    color: var(--color-darkOrange);
   }
 
   .section-container {
@@ -427,6 +432,10 @@ button {
     border-top: 1px solid var(--color-grey);
   }
 
+  .events-box-container {
+    flex-direction: column;
+  }
+
   .events-box {
     width: 80%;
     max-width: 350px;
@@ -473,11 +482,15 @@ button {
 
   /* ==== FOOTER ==== */
   footer {
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1.5em;
     padding: 2em 0;
     border-top: 1px solid var(--color-grey);
+  }
+
+  .footer-2 {
+    display: none;
   }
 }
 
@@ -623,7 +636,6 @@ button {
     align-items: center;
     padding: 0.3em 2em 0.3em 0;
     border-radius: 0;
-    background: var(--color-white);
     box-shadow: 0 1px 15px -6px var(--color-dark);
     z-index: 1000;
   }
@@ -651,14 +663,14 @@ button {
   }
 
   .menu-box ul li a {
-    color: var(--color-dark);
     font-weight: 400;
     font-size: 20px;
     text-shadow: none;
   }
 
-  .menu-box ul li a.active {
-    color: var(--color-darkOrange);
+  .menu-box ul li a:hover,
+  .menu-box ul li a:focus {
+    transform: translateY(-3px);
   }
 
   .section-container {
@@ -741,10 +753,11 @@ button {
     display: block;
   }
 
-  .btn-more.hidden-item {
+  .about-page.partner-section {
     display: none;
   }
 
+  /* ==== LATEST EVENTS SECTION ==== */
   .featured-speakers .section-container {
     max-width: 100%;
     grid-template-columns: 50% 50%;
@@ -760,6 +773,28 @@ button {
 
   .speaker-img::before {
     opacity: 0.3;
+  }
+
+  .btn-more.hidden-item {
+    display: none;
+  }
+
+  /* ==== LATEST EVENTS SECTION ==== */
+  .events-box-container {
+    max-width: 1440px;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  /* ==== FOOTER ==== */
+  .footer-1 {
+    display: none;
+  }
+
+  .footer-2 {
+    display: flex;
+    background: var(--color-dark);
+    color: var(--color-white);
   }
 }
 
