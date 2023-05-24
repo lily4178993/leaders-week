@@ -646,11 +646,11 @@ button {
 /* ==== Laptop > 450px and < 768px ==== */
 @media screen and (width > 450px) and (width <= 768px) {
   /* ==== HERO SECTION ==== */
-  .hero-section .section-container .title-box{
+  .hero-section .section-container .title-box {
     max-width: 350px;
   }
-  
-  .about-page.hero-section .section-container .title-box{
+
+  .about-page.hero-section .section-container .title-box {
     margin: auto;
   }
 }
