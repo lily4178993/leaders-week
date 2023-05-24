@@ -116,6 +116,7 @@ button {
     overflow: hidden;
     border-bottom-left-radius: 100%;
     transition: width 1s, height 1s, border-radius 1s;
+    z-index: 99;
   }
 
   .menu-box.menu-open {
