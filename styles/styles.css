@@ -186,6 +186,7 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     background: url("../images/background-1.png") top/cover no-repeat;
+    padding: 2em 1em;
     padding-top: 4em;
   }
 
@@ -750,7 +751,7 @@ button {
 
   /* ==== HERO SECTION ==== */
   .hero-section .section-container {
-    max-width: 600px;
+    max-width: 733px;
     margin: 3em;
   }
 
