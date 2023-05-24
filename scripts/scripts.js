@@ -99,3 +99,49 @@ collectionOfSpeakers.map((speaker) => {
       `;
   return ('');
 });
+
+// ==================== # ====================
+/**
+ * Implement the user interactions: show / hide, 'more button'
+ */
+
+// Get 'more' button
+const moreButton = document.querySelector('.btn-more');
+
+// Get speaker box
+const speakerBox = document.querySelectorAll('.speaker-box');
+
+// Get speaker name
+const speakerName = document.querySelectorAll('.speaker-infos h4');
+
+// function that add a display none to the speaker box and hide it
+function hideSpeakerBox() {
+  for (let i = 2; i < collectionOfSpeakers.length; i += 1) {
+    if (collectionOfSpeakers[i].name === speakerName[i].innerText) {
+      speakerBox[i].style.display = 'none';
+    }
+  }
+}
+hideSpeakerBox();
+
+// function that add a display grid to the speaker box and show it
+function showSpeakerBox() {
+  for (let i = 2; i < collectionOfSpeakers.length; i += 1) {
+    if (collectionOfSpeakers[i].name === speakerName[i].innerText) {
+      speakerBox[i].style.display = 'grid';
+    }
+  }
+}
+
+/**
+  * Toggle action --> Add / remove class element 'active'
+  * when 'more button' clicked
+*/
+moreButton.onclick = () => {
+  moreButton.classList.toggle('active');
+  if (moreButton.classList.contains('active')) {
+    showSpeakerBox();
+  } else {
+    hideSpeakerBox();
+  }
+};
