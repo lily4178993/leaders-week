@@ -198,16 +198,22 @@ button {
     color: var(--color-dark-orange);
   }
 
+  .hero-section .subtitle {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .about-page.hero-section .subtitle {
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 900;
+  }
+
   .hero-section .title {
     text-transform: uppercase;
     font-size: 1.5rem;
+    font-weight: 900;
     letter-spacing: 2px;
-    background: url("../images/background-3.png") center/cover, var(--color-dark-orange);
-    -webkit-text-fill-color: #ec5342b4;
-  }
-
-  .hero-section .subtitle {
-    font-size: 1.5rem;
   }
 
   .hero-section .description {
@@ -516,6 +522,14 @@ button {
   }
 
   /* ==== HERO SECTION ==== */
+  .hero-section .title {
+    font-size: 2.5rem;
+  }
+
+  .about-page.hero-section .subtitle {
+    font-size: 2.9rem;
+  }
+
   .hero-event {
     font-size: 1.2rem;
   }
@@ -561,7 +575,7 @@ button {
     font-size: 2rem;
   }
 
-  .hero-section .subtitle {
+  .about-page.hero-section .subtitle {
     font-size: 2.5rem;
   }
 
@@ -626,6 +640,18 @@ button {
 @media screen and (width > 450px) {
   .hero-section {
     height: auto;
+  }
+}
+
+/* ==== Laptop > 450px and < 768px ==== */
+@media screen and (width > 450px) and (width <= 768px) {
+  /* ==== HERO SECTION ==== */
+  .hero-section .section-container .title-box{
+    max-width: 350px;
+  }
+  
+  .about-page.hero-section .section-container .title-box{
+    margin: auto;
   }
 }
 
@@ -728,7 +754,7 @@ button {
 
   /* ==== HERO SECTION ==== */
   .hero-section .section-container {
-    max-width: 700px;
+    max-width: 600px;
     margin: 3em;
   }
 
@@ -761,11 +787,8 @@ button {
 
   .about-page.hero-section .subtitle {
     font-size: 3.5rem;
-    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: url("../images/background-3.png") center/cover, var(--color-dark-orange);
-    -webkit-text-fill-color: #ec5342b4;
   }
 
   /* ==== MAIN PROGRAM SECTION ==== */
