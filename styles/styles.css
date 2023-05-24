@@ -5,14 +5,13 @@
 :root {
   /* === COLORS === */
   --color-dark: #272a31;
-  --color-darkOrange: #ec5242;
+  --color-dark-orange: #ec5242;
   --color-grey: #d3d3d3;
   --color-white: #fff;
   --color-whitesmoke: #f9f9f9;
 
   /* === FONTS FAMILY === */
   --font-family-1: 'Lato', sans-serif;
-  --font-family-2: 'Dela Gothic One', cursive;
 
   /* === FONTS SIZE === */
   --font-size-1: 60px;
@@ -67,7 +66,7 @@ button {
 .separator {
   width: 10%;
   height: 1px;
-  background-color: var(--color-darkOrange);
+  background-color: var(--color-dark-orange);
 }
 
 .text-small {
@@ -75,8 +74,8 @@ button {
 }
 
 .bold {
-  font-family: var(--font-family-2);
-  font-weight: 500;
+  font-family: var(--font-family-1);
+  font-weight: 900;
 }
 
 .btn {
@@ -102,12 +101,23 @@ button {
     z-index: 100;
   }
 
-  .menu-box {
-    width: 0%;
-    height: 0;
+  nav {
     position: fixed;
     top: 0;
     left: 0;
+  }
+
+  .nav-box {
+    flex-direction: column-reverse;
+  }
+
+  .menu-top {
+    display: none;
+  }
+
+  .menu-box {
+    width: 0%;
+    height: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -130,7 +140,6 @@ button {
   }
 
   .menu-box ul li {
-    list-style: none;
     text-align: center;
     margin: 15px 0;
     opacity: 0;
@@ -145,7 +154,6 @@ button {
 
   .menu-box ul li a {
     display: inline-block;
-    text-decoration: none;
     text-transform: capitalize;
     font-size: 40px;
     font-weight: 600;
@@ -161,7 +169,7 @@ button {
   }
 
   .menu-box ul li a.active {
-    color: var(--color-darkOrange);
+    color: var(--color-dark-orange);
   }
 
   .section-container {
@@ -177,7 +185,7 @@ button {
     height: 50vh;
     align-items: flex-start;
     justify-content: flex-start;
-    background: url(../images/background-1.png) top/cover no-repeat;
+    background: url("../images/background-1.png") top/cover no-repeat;
     padding-top: 4em;
   }
 
@@ -187,15 +195,14 @@ button {
 
   .hero-section .title-box {
     flex-direction: column-reverse;
-    color: var(--color-darkOrange);
+    color: var(--color-dark-orange);
   }
 
   .hero-section .title {
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    background: url(../images/background-3.png) center/cover, var(--color-darkOrange);
-    -webkit-background-clip: text;
+    background: url("../images/background-3.png") center/cover, var(--color-dark-orange);
     -webkit-text-fill-color: #ec5342b4;
   }
 
@@ -231,7 +238,7 @@ button {
   }
 
   .program-section {
-    background: url(../images/background-2.svg) top/cover repeat, var(--color-dark);
+    background: url("../images/background-2.svg") top/cover repeat, var(--color-dark);
     background-size: 100px;
     color: var(--color-white);
     padding: 1.5em 0;
@@ -288,7 +295,7 @@ button {
   }
 
   .program-icon h3 {
-    color: var(--color-darkOrange);
+    color: var(--color-dark-orange);
   }
 
   .program-icon img {
@@ -301,7 +308,7 @@ button {
     width: 81%;
     letter-spacing: -1px;
     color: var(--color-white);
-    background: var(--color-darkOrange);
+    background: var(--color-dark-orange);
   }
 
   /* ==== FEATURED SPEAKERS SECTION ==== */
@@ -328,7 +335,7 @@ button {
     content: '';
     width: 45%;
     height: 45%;
-    background: url(../images/background-4.svg) center/cover repeat;
+    background: url("../images/background-4.svg") center/cover repeat;
     background-size: 11px;
     top: -13%;
     left: -11%;
@@ -353,12 +360,12 @@ button {
   .speaker-infos .title {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-darkOrange);
+    color: var(--color-dark-orange);
   }
 
   .speaker-infos .separator {
     background: var(--color-dark);
-    margin: 0.3em 0 0.6em 0;
+    margin: 0.3em 0 0.6em;
   }
 
   .speaker-infos .description {
@@ -374,17 +381,17 @@ button {
     background: var(--color-white);
   }
 
-  .btn-more .downArrow {
+  .btn-more .down-arrow {
     width: 6px;
     height: 6px;
-    border-bottom: 2px solid var(--color-darkOrange);
-    border-right: 2px solid var(--color-darkOrange);
+    border-bottom: 2px solid var(--color-dark-orange);
+    border-right: 2px solid var(--color-dark-orange);
     transform: rotate(45deg);
     padding: 0.2em;
     margin-top: -0.5em;
   }
 
-  .btn-more.active .downArrow {
+  .btn-more.active .down-arrow {
     transform: rotate(230deg);
     margin-top: -0.2em;
   }
@@ -403,12 +410,11 @@ button {
 
   .partner-box {
     max-width: max-content;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-end;
     gap: 1.5em;
     margin: 0 auto;
-    flex-wrap: wrap;
     font-weight: 600;
     font-size: 1.45rem;
   }
@@ -457,7 +463,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-darkOrange);
+    background: var(--color-dark-orange);
     opacity: 0.6;
   }
 
@@ -474,11 +480,11 @@ button {
   }
 
   .events-box.box-1 {
-    background: url(../images/event-1.jpg) center/cover no-repeat;
+    background: url("../images/event-1.jpg") center/cover no-repeat;
   }
 
   .events-box.box-2 {
-    background: url(../images/event-2.jpg) center/cover no-repeat;
+    background: url("../images/event-2.jpg") center/cover no-repeat;
   }
 
   /* ==== FOOTER ==== */
@@ -630,6 +636,38 @@ button {
     display: none;
   }
 
+  .menu-top {
+    width: 100%;
+    background: var(--color-dark);
+    z-index: 10000;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu-top .hidden-item {
+    opacity: 0;
+    width: 25vw;
+    max-width: 100%;
+    height: 2px;
+  }
+
+  .menu-top .icon img{
+    max-width: 12px;
+  }
+
+  .menu-top ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-top ul li a {
+    font-size: small;
+    display: inline-block;
+    color: var(--color-white);
+    padding: 0.3em 0.5em;
+    margin: 0.2em;
+  }
+
   .menu-box {
     width: 100%;
     height: auto;
@@ -638,6 +676,7 @@ button {
     padding: 0.3em 2em 0.3em 0;
     border-radius: 0;
     box-shadow: 0 1px 15px -6px var(--color-dark);
+    top: 0.5em;
     z-index: 1000;
   }
 
@@ -647,8 +686,8 @@ button {
 
   .menu-box .red-bordered {
     padding: 0.3em;
-    color: var(--color-darkOrange);
-    border: 4px solid var(--color-darkOrange);
+    color: var(--color-dark-orange);
+    border: 4px solid var(--color-dark-orange);
   }
 
   .menu-box ul {
@@ -688,6 +727,29 @@ button {
   }
 
   /* ==== HERO SECTION ==== */
+  .hero-section .section-container {
+    max-width: 700px;
+    margin: 3em;
+  }
+
+  .program-section .section-container {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3em;
+  }
+
+  .featured-speakers .section-container {
+    max-width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    gap: 1em;
+    justify-items: center;
+  }
+
+  .about-page.hero-section .section-container {
+    margin: 3em auto;
+  }
+
   .hero-section .title {
     font-size: 3rem;
   }
@@ -702,18 +764,11 @@ button {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: url(../images/background-3.png) center/cover, var(--color-darkOrange);
-    -webkit-background-clip: text;
+    background: url("../images/background-3.png") center/cover, var(--color-dark-orange);
     -webkit-text-fill-color: #ec5342b4;
   }
 
   /* ==== MAIN PROGRAM SECTION ==== */
-  .program-section .section-container {
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.3em;
-  }
-
   .program-section .hidden-item {
     display: block;
     color: var(--color-whitesmoke);
@@ -759,16 +814,8 @@ button {
   }
 
   /* ==== LATEST EVENTS SECTION ==== */
-  .featured-speakers .section-container {
-    max-width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: auto;
-    gap: 1em;
-    justify-items: center;
-  }
-
   .speaker-box {
-    max-width: 600px;
+    max-width: 550px;
     gap: 0.5em;
   }
 
@@ -801,6 +848,10 @@ button {
 
 /* ==== Laptop > 1389px ==== */
 @media screen and (width > 1389px) {
+  .hero-section .section-container {
+    margin: 3em 15%;
+  }
+
   .program-box {
     grid-template-rows: 47% auto;
   }
