@@ -61,7 +61,7 @@ This is my first capstone project studying at Microverse. It is a simple website
 
 ## <b>Live Demo 🚀</b><a name="live-demo"></a>
 
-You can see the live demonstration of this website [here]().
+You can see the live demonstration of this website [here](https://lily4178993.github.io/leaders-week/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## <b>Getting Started 💻</b><a name="getting-started"></a>
