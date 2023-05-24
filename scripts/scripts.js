@@ -122,7 +122,6 @@ function hideSpeakerBox() {
     }
   }
 }
-hideSpeakerBox();
 
 // function that add a display grid to the speaker box and show it
 function showSpeakerBox() {
@@ -134,14 +133,25 @@ function showSpeakerBox() {
 }
 
 /**
-  * Toggle action --> Add / remove class element 'active'
-  * when 'more button' clicked
+  * Resize action --> Track the size of the browser
 */
-moreButton.onclick = () => {
-  moreButton.classList.toggle('active');
-  if (moreButton.classList.contains('active')) {
-    showSpeakerBox();
-  } else {
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 768) {
     hideSpeakerBox();
+
+    /**
+      * Toggle action --> Add / remove class element 'active'
+      * when 'more button' clicked
+    */
+    moreButton.onclick = () => {
+      moreButton.classList.toggle('active');
+      if (moreButton.classList.contains('active')) {
+        showSpeakerBox();
+      } else {
+        hideSpeakerBox();
+      }
+    };
+  } else {
+    showSpeakerBox();
   }
-};
+});
