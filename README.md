@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 # leaders-week
-This is my first capstone project studying at Microverse. It is a simple website and it can be rebuilt and used for any kind of conference or summit.
+Leaders Week is a fictive global summit that brings together university students and a community of experts who assert themselves as leaders and great entrepreneurs in different countries every two years. The conference website I've built is for the event held in Benin in July, 2023.
 <br><br>
 <div align="center">
   <b>*******</b><br>
