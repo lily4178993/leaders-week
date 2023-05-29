@@ -155,3 +155,6 @@ window.addEventListener('resize', () => {
     showSpeakerBox();
   }
 });
+
+// Create an empty array
+const myNewArray = [];
