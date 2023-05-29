@@ -495,12 +495,8 @@ button {
   }
 
   /* ==== FOOTER ==== */
-  footer {
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.5em;
-    padding: 2em 0;
-    border-top: 1px solid var(--color-grey);
+  .home-page.footer-1 {
+    display: none;
   }
 
   .footer-2 {
@@ -855,6 +851,15 @@ button {
   }
 
   /* ==== FOOTER ==== */
+  .home-page.footer-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em 0;
+    border-top: 1px solid var(--color-grey);
+  }
+
   .footer-1 {
     display: none;
   }
