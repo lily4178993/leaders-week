@@ -84,7 +84,7 @@ const featuredSpeakers = document.querySelector('.featured-speakers .section-con
 collectionOfSpeakers.map((speaker) => {
   featuredSpeakers.innerHTML += `
       <!-- SPEAKER BOX (begin) -->
-      <div class="speaker-box card-box d-grid">
+      <article class="speaker-box card-box d-grid">
           <div class="speaker-img d-flex">
               <img src="${speaker.image_url}" alt="${speaker.image_credit}">
           </div>
@@ -94,7 +94,7 @@ collectionOfSpeakers.map((speaker) => {
               <div class="separator"></div>
               <p class="description">${speaker.description}</p>
           </div>
-      </div>
+      </article>
       <!-- SPEAKER BOX (end) -->
       `;
   return ('');

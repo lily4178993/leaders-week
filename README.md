@@ -1,14 +1,5 @@
 <a name="readme-top"></a>
 
-# leaders-week
-Leaders Week is a fictive global summit that brings together university students and a community of experts who assert themselves as leaders and great entrepreneurs in different countries every two years. The conference website I've built is for the event held in Benin in July, 2023.
-<br><br>
-<div align="center">
-  <b>*******</b><br>
-  <b>**************</b><br>
-  <b>*******</b>
-</div>
-<br>
 
 ## <b>Table of Contents
 
@@ -31,6 +22,11 @@ Leaders Week is a fictive global summit that brings together university students
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 </b>
+
+
+## 📖 leaders-week
+
+The Summit Conference website built with HTML, CSS, and JavaScript. The website showcases information about the upcoming Summit Conference, including the event schedule, speakers, and registration details. The website features a user-friendly interface and is designed to provide users with a seamless experience when browsing through the website.
 
 
 ## <b>Built With 🛠</b><a name="built-with"></a><br>
@@ -187,6 +183,6 @@ Finally I am grateful to [Microverse](https://github.com/microverseinc) for the 
 
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/lily4178993/leaders-week/blob/features-content-update/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
