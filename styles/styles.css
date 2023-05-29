@@ -451,6 +451,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: 1em;
   }
 
   .events-box {
