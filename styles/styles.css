@@ -851,13 +851,16 @@ button {
   }
 
   /* ==== FOOTER ==== */
-  .home-page.footer-1 {
-    display: flex;
-    justify-content: space-evenly;
+  footer {
+    justify-content: center;
     align-items: center;
     gap: 1.5em;
     padding: 2em 0;
     border-top: 1px solid var(--color-grey);
+  }
+
+  .home-page.footer-1 {
+    display: flex;
   }
 
   .footer-1 {
