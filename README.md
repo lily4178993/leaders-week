@@ -182,6 +182,6 @@ Finally I am grateful to [Microverse](https://github.com/microverseinc) for the 
 
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENCE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
