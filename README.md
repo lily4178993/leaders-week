@@ -182,6 +182,6 @@ Finally I am grateful to [Microverse](https://github.com/microverseinc) for the 
 
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](./LICENCE.md) licensed.
+This project is [MIT](https://github.com/lily4178993/leaders-week/blob/features-content-update/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
