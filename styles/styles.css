@@ -434,7 +434,8 @@ button {
   }
 
   .about-leader-week p {
-    width: 450px;
+    width: 313px;
+    max-width: 450px;
   }
 
   .about-leader-week img {
