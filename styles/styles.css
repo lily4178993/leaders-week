@@ -194,6 +194,11 @@ button {
     text-align: center;
   }
 
+  .about-page.hero-section .separator {
+    align-self: center;
+    margin: 1em;
+  }
+
   .hero-section .title-box {
     flex-direction: column-reverse;
     color: var(--color-dark-orange);
@@ -782,6 +787,10 @@ button {
 
   .about-page.hero-section .section-container {
     margin: 3em auto;
+  }
+
+  .about-page.hero-section .separator {
+    display: none;
   }
 
   .hero-section .title {
