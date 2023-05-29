@@ -158,3 +158,4 @@ window.addEventListener('resize', () => {
 
 // Create an empty array
 const myNewArray = [];
+myNewArray.push('This is an example');
