@@ -434,7 +434,7 @@ button {
   }
 
   .about-leader-week p {
-    width: 313px;
+    min-width: 313px;
     max-width: 450px;
   }
 
