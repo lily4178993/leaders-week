@@ -375,11 +375,6 @@ button {
     color: var(--color-dark-orange);
   }
 
-  .speaker-infos .separator {
-    background: var(--color-dark);
-    margin: 0.3em 0 0.6em;
-  }
-
   .speaker-infos .description {
     font-size: 1rem;
   }
@@ -787,6 +782,11 @@ button {
 
   .about-page.hero-section .section-container {
     margin: 3em auto;
+  }
+
+  .speaker-infos .separator {
+    background: var(--color-dark);
+    margin: 0.3em 0 0.6em;
   }
 
   .about-page.hero-section .separator {
