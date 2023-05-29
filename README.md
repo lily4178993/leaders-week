@@ -1,15 +1,5 @@
 <a name="readme-top"></a>
 
-# leaders-week
-This is my first capstone project studying at Microverse. It is a simple website and it can be rebuilt and used for any kind of conference or summit.
-<br><br>
-<div align="center">
-  <b>*******</b><br>
-  <b>**************</b><br>
-  <b>*******</b>
-</div>
-<br>
-
 ## <b>Table of Contents
 
 - [About the Project](#about-project)
@@ -31,6 +21,11 @@ This is my first capstone project studying at Microverse. It is a simple website
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 </b>
+
+
+## 📖 leaders-week
+
+The Summit Conference website built with HTML, CSS, and JavaScript. The website showcases information about the upcoming Summit Conference, including the event schedule, speakers, and registration details. The website features a user-friendly interface and is designed to provide users with a seamless experience when browsing through the website.
 
 
 ## <b>Built With 🛠</b><a name="built-with"></a><br>
