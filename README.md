@@ -1,8 +1,12 @@
 <a name="readme-top"></a>
+<hr>
 
+# <b>leaders-week</b>
+
+<hr>
 
 ## <b>Table of Contents
-
+  
 - [About the Project](#about-project)
   - [Built With](#built-with)
     - [Tech Stack](#tech-stack)
@@ -22,9 +26,9 @@
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 </b>
+<hr><hr>
 
-
-## 📖 leaders-week
+## <b>leaders-week 📖</b>
 
 The Summit Conference website built with HTML, CSS, and JavaScript. The website showcases information about the upcoming Summit Conference, including the event schedule, speakers, and registration details. The website features a user-friendly interface and is designed to provide users with a seamless experience when browsing through the website.
 
