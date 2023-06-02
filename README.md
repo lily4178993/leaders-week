@@ -237,6 +237,6 @@ I would like to express my sincere gratitude to [Cindy Shinw](https://www.behanc
 
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](https://github.com/lily4178993/leaders-week/blob/features-content-update/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
